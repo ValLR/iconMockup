@@ -7,20 +7,22 @@ class Icon extends React.Component {
 	constructor(props){
 		super(props)
 		this.state = {
-			url:"",
-			user:""
+			url1:"",
+			url2:"",
+			user1:"",
+			user2:"",
 		}
 	}
 
 	componentDidMount(){
-		this.setState({url:"yes", user:false});
+		this.setState({url1:null,url2:"github.com", user1:true, user2:false});
 	}
 	render(){
 		return (
 			<div>
-				<Logo url= {this.state.url} userAccess= {this.state.user}/>
-				<Logo url= {this.state.url} userAccess= {this.state.user}/>
-				<Logo url= {this.state.url} userAccess= {this.state.user}/>
+				<Logo url= {this.state.url1} userAccess= {this.state.user2}/>
+				<Logo url= {this.state.url2} userAccess= {this.state.user1}/>
+				<Logo url= {this.state.url2} userAccess= {this.state.user2}/>
 			</div>
 		)
 	}
@@ -58,7 +60,7 @@ class NoAccess extends React.Component {
 }
 class Normal extends React.Component {
 	render(){
-		return <a>NormalLogo</a>
+		return <a>Normal</a>
 	}
 }
 
