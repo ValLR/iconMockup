@@ -6,18 +6,14 @@ body {
 
 a {
 	text-decoration: none;
+	color:black;
 }
 
 a.disabled {
    pointer-events: none;
    cursor: default;
-   color:grey;
 }
 
-a.noAccess {
-	color:black;
-}
-
-a.normal {
-	color:black;
+img.disabled-icon {
+	opacity:0.5;
 }
